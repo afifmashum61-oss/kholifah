@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Pembelajaran SKI Kelas 10: Khulafaur Rasyidin</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    :root {
+      --bg-main: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #0f172a;
+      --primary: #047857;
+    }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      min-height: 100vh;
+    }
+    .active-nav-bottom {
+      background-color: #ecfdf5;
+      color: #047857;
+      font-weight: 700;
+    }
+    .glass-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    }
+    @keyframes floatUp {
+      0% { opacity: 0; transform: translateY(10px) scale(0.8); }
+      50% { opacity: 1; transform: translateY(-20px) scale(1.3); }
+      100% { opacity: 0; transform: translateY(-50px) scale(1); }
+    }
+    .animate-float-score {
+      animation: floatUp 1.2s ease-out forwards;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-800 antialiased pb-28 pt-2 px-2 md:px-6">
+
+  <!-- MAIN CONTAINER -->
+  <div class="max-w-5xl mx-auto bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden mb-8">
+    
+    <!-- ORIGINAL ELEGANT ISLAMIC HEADER -->
+    <header class="bg-gradient-to-r from-emerald-800 via-emerald-700 to-teal-800 text-white p-5 md:p-6 relative overflow-hidden">
+      <div class="absolute -right-8 -bottom-8 opacity-10 text-8xl select-none font-serif">🕌</div>
+      <div class="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-3">
+        <div>
+          <div class="inline-flex items-center gap-2 bg-emerald-900/60 px-3 py-1 rounded-full text-[11px] font-semibold tracking-wide text-emerald-200 mb-1 border border-emerald-500/30">
+            <span>✨ MEDIA PEMBELAJARAN INTERAKTIF</span>
+            <span>•</span>
+            <span>SKI KELAS 10 SMA/MA</span>
+          </div>
+          <h1 class="text-xl md:text-3xl font-extrabold text-white tracking-tight">
+            Perkembangan Islam Masa Khulafaur Rasyidin
+          </h1>
+          <p class="text-emerald-100 text-xs md:text-sm mt-1 max-w-2xl">
+            Sejarah kepemimpinan 4 Sahabat Utama (11 H - 40 H) dilengkapi visualisasi galeri & kuis interaktif ala Kahoot.
+          </p>
+        </div>
+        <button onclick="playChime()" class="bg-emerald-600/90 hover:bg-emerald-600 text-white text-xs px-3 py-1.5 rounded-lg border border-emerald-400/40 flex items-center gap-1 transition self-end md:self-center shadow-sm">
+          🔊 Sound On
+        </button>
+      </div>
+    </header>
+
+    <!-- CONTENT SECTION -->
+    <main class="p-4 md:p-6">
+
+      <!-- TAB 1: MATERI PEMBELAJARAN -->
+      <section id="tab-materi" class="space-y-6">
+        
+        <!-- Banner Highlight -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 items-center bg-gradient-to-br from-amber-50 via-emerald-50 to-teal-50 p-4 md:p-5 rounded-xl border border-amber-200/70">
+          <div class="md:col-span-2 space-y-2">
+            <span class="bg-amber-100 text-amber-900 text-[11px] font-bold px-2.5 py-0.5 rounded">Pengantar SKI Kelas 10</span>
+            <h2 class="text-lg md:text-xl font-bold text-slate-900">Apa itu Khulafaur Rasyidin?</h2>
+            <p class="text-slate-700 text-xs md:text-sm leading-relaxed">
+              <strong>Khulafaur Rasyidin</strong> (الخلفاء الراشدون) berarti <em>para pemimpin yang mendapat petunjuk</em>. Mereka adalah 4 sahabat utama pengganti fungsi kepemimpinan peradaban Islam pasca wafatnya Rasulullah SAW.
+            </p>
+            <div class="flex flex-wrap gap-1.5 text-xs font-semibold pt-1">
+              <span class="bg-white border border-slate-300 px-2.5 py-1 rounded-full text-emerald-800">1. Abu Bakar as-Siddiq (11-13 H)</span>
+              <span class="bg-white border border-slate-300 px-2.5 py-1 rounded-full text-emerald-800">2. Umar bin Khattab (13-23 H)</span>
+              <span class="bg-white border border-slate-300 px-2.5 py-1 rounded-full text-emerald-800">3. Utsman bin Affan (23-35 H)</span>
+              <span class="bg-white border border-slate-300 px-2.5 py-1 rounded-full text-emerald-800">4. Ali bin Abi Thalib (35-40 H)</span>
+            </div>
+          </div>
+          <div class="rounded-xl overflow-hidden shadow-md border border-slate-200 cursor-pointer" onclick="openLightbox('./assets/images/banner.jpg', 'Poster Khulafaur Rasyidin')">
+            <img src="./assets/images/banner.jpg" onerror="this.src='file:///C:/Users/HP/.gemini/antigravity/scratch/ski-khulafaur-rasyidin/assets/images/banner.jpg'" alt="Banner Khulafaur Rasyidin" class="w-full h-40 object-cover hover:scale-105 transition duration-300">
+          </div>
+        </div>
+
+        <!-- Sub Tab Tokoh -->
+        <div class="flex gap-1.5 border-b border-slate-200 pb-2 overflow-x-auto text-xs font-bold">
+          <button id="btn-khalifah-1" onclick="showKhalifah(1)" class="px-3.5 py-2 rounded-lg bg-emerald-700 text-white transition whitespace-nowrap">1. Abu Bakar as-Siddiq</button>
+          <button id="btn-khalifah-2" onclick="showKhalifah(2)" class="px-3.5 py-2 rounded-lg bg-slate-200 text-slate-700 hover:bg-slate-300 transition whitespace-nowrap">2. Umar bin Khattab</button>
+          <button id="btn-khalifah-3" onclick="showKhalifah(3)" class="px-3.5 py-2 rounded-lg bg-slate-200 text-slate-700 hover:bg-slate-300 transition whitespace-nowrap">3. Utsman bin Affan</button>
+          <button id="btn-khalifah-4" onclick="showKhalifah(4)" class="px-3.5 py-2 rounded-lg bg-slate-200 text-slate-700 hover:bg-slate-300 transition whitespace-nowrap">4. Ali bin Abi Thalib</button>
+        </div>
+
+        <!-- Detail Khalifah Content Containers -->
+        <!-- Khalifah 1: Abu Bakar -->
+        <div id="khalifah-1" class="space-y-4">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div class="md:col-span-2 space-y-3">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center font-bold text-lg">1</div>
+                <div>
+                  <h3 class="text-lg font-extrabold text-slate-900">Khalifah Abu Bakar as-Siddiq (11–13 H / 632–634 M)</h3>
+                  <p class="text-xs text-emerald-700 font-semibold">Gelar: As-Siddiq (Orang yang Membenarkan)</p>
+                </div>
+              </div>
+
+              <div class="space-y-2 text-slate-700 text-xs md:text-sm leading-relaxed">
+                <p><strong>A. Biografi:</strong> Nama aslinya Abdullah bin Abi Quhafah. Sahabat karib Rasulullah SAW dan orang dewasa pertama yang masuk Islam (*Assabiqunal Awwalun*).</p>
+                
+                <p><strong>B. Kebijakan & Prestasi Utama:</strong></p>
+                <ul class="list-disc pl-5 space-y-1.5">
+                  <li><strong>Penumpasan Perang Riddah:</strong> Menindak tegas pembangkang zakat, kaum murtad, dan nabi palsu (Musailamah Al-Kazzab) pada *Perang Yamamah*.</li>
+                  <li><strong>Kodifikasi Al-Qur'an Pertama:</strong> Diusulkan Umar bin Khattab karena gugurnya 70 *huffaz* di Perang Yamamah. Panitia diketuai <strong>Zaid bin Tsabit</strong>.</li>
+                  <li><strong>Rintisan Ekspansi Wilayah:</strong> Mengirim pasukan merintis pembebasan wilayah Irak dan Syam dari dominasi Persia & Romawi.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="glass-card p-3 rounded-xl space-y-2 cursor-pointer" onclick="openLightbox('./assets/images/quran.jpg', 'Kodifikasi Al-Qur\'an Pertama')">
+              <img src="./assets/images/quran.jpg" onerror="this.src='file:///C:/Users/HP/.gemini/antigravity/scratch/ski-khulafaur-rasyidin/assets/images/quran.jpg'" alt="Kodifikasi Al-Quran" class="rounded-lg object-cover w-full h-40 border">
+              <span class="text-[10px] font-bold text-amber-800 bg-amber-100 px-2 py-0.5 rounded inline-block">Visualisasi Sejarah</span>
+              <p class="text-xs text-slate-600">Pengumpulan lembaran wahyu Al-Qur'an pertama kali dilakukan pada masa Abu Bakar.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Khalifah 2: Umar bin Khattab -->
+        <div id="khalifah-2" class="hidden space-y-4">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div class="md:col-span-2 space-y-3">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center font-bold text-lg">2</div>
+                <div>
+                  <h3 class="text-lg font-extrabold text-slate-900">Khalifah Umar bin Khattab (13–23 H / 634–644 M)</h3>
+                  <p class="text-xs text-emerald-700 font-semibold">Gelar: Al-Faruq (Pembeda Hak & Batil) & Amirul Mukminin</p>
+                </div>
+              </div>
+
+              <div class="space-y-2 text-slate-700 text-xs md:text-sm leading-relaxed">
+                <p><strong>A. Biografi:</strong> Berasal dari Bani Adi. Dikenal tegas, adil, berwibawa, dan sangat sederhana.</p>
+                
+                <p><strong>B. Kebijakan & Reformasi Administrasi:</strong></p>
+                <ul class="list-disc pl-5 space-y-1.5">
+                  <li><strong>Penetapan Kalender Hijriah:</strong> Berpatokan pada peristiwa Hijrah Nabi SAW dari Makkah ke Madinah.</li>
+                  <li><strong>Lembaga Kas Negara Baitul Mal:</strong> Membentuk kas negara (*Baitul Mal*) serta sistem pencatatan gaji tentara (*Diwan*).</li>
+                  <li><strong>Kemenangan Perang Qadisiyyah & Yarmuk:</strong> Kemenangan atas Persia, Romawi, serta pembebasan Yerusalem.</li>
+                  <li><strong>Kota Baru & Kehakiman:</strong> Mendirikan kota Basrah, Kufah, Fustat, serta mengangkat hakim (*Qadhi*).</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="glass-card p-3 rounded-xl space-y-2 cursor-pointer" onclick="openLightbox('./assets/images/baitulmal.jpg', 'Baitul Mal Umar bin Khattab')">
+              <img src="./assets/images/baitulmal.jpg" onerror="this.src='file:///C:/Users/HP/.gemini/antigravity/scratch/ski-khulafaur-rasyidin/assets/images/baitulmal.jpg'" alt="Baitul Mal Umar" class="rounded-lg object-cover w-full h-40 border">
+              <span class="text-[10px] font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded inline-block">Visualisasi Reformasi</span>
+              <p class="text-xs text-slate-600">Lembaga Baitul Mal & Dewan Gaji didirikan Umar bin Khattab untuk keadilan ekonomi.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Khalifah 3: Utsman bin Affan -->
+        <div id="khalifah-3" class="hidden space-y-4">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div class="md:col-span-2 space-y-3">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center font-bold text-lg">3</div>
+                <div>
+                  <h3 class="text-lg font-extrabold text-slate-900">Khalifah Utsman bin Affan (23–35 H / 644–656 M)</h3>
+                  <p class="text-xs text-emerald-700 font-semibold">Gelar: Dzun Nurain (Pemilik Dua Cahaya)</p>
+                </div>
+              </div>
+
+              <div class="space-y-2 text-slate-700 text-xs md:text-sm leading-relaxed">
+                <p><strong>A. Biografi:</strong> Berasal dari Bani Umayyah. Dikenal dermawan, pemalu, dan penyabar. Menikahi dua putri Rasulullah SAW.</p>
+                
+                <p><strong>B. Kebijakan Utama:</strong></p>
+                <ul class="list-disc pl-5 space-y-1.5">
+                  <li><strong>Standardisasi Mushaf Utsmani:</strong> Menyusun Al-Qur'an seragam dialek Quraisy dan menggandakan 5-6 salinan ke kota utama.</li>
+                  <li><strong>Armada Laut Islam Pertama:</strong> Membentuk armada laut pertahanan untuk menjaga perairan Laut Tengah (*Pertempuran Dzatus Sawari*).</li>
+                  <li><strong>Renovasi Masjid:</strong> Perluasan Masjid Nabawi & Masjidil Haram.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="glass-card p-3 rounded-xl space-y-2 cursor-pointer" onclick="openLightbox('./assets/images/quran.jpg', 'Mushaf Utsmani')">
+              <img src="./assets/images/quran.jpg" onerror="this.src='file:///C:/Users/HP/.gemini/antigravity/scratch/ski-khulafaur-rasyidin/assets/images/quran.jpg'" alt="Mushaf Utsmani" class="rounded-lg object-cover w-full h-40 border">
+              <span class="text-[10px] font-bold text-indigo-800 bg-indigo-100 px-2 py-0.5 rounded inline-block">Standardisasi Al-Qur'an</span>
+              <p class="text-xs text-slate-600">Mushaf Utsmani menjadi rujukan tunggal penulisan Al-Qur'an seluruh dunia.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Khalifah 4: Ali bin Abi Thalib -->
+        <div id="khalifah-4" class="hidden space-y-4">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div class="md:col-span-2 space-y-3">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center font-bold text-lg">4</div>
+                <div>
+                  <h3 class="text-lg font-extrabold text-slate-900">Khalifah Ali bin Abi Thalib (35–40 H / 656–661 M)</h3>
+                  <p class="text-xs text-emerald-700 font-semibold">Gelar: Babul 'Ilmi (Pintu Gerbang Ilmu)</p>
+                </div>
+              </div>
+
+              <div class="space-y-2 text-slate-700 text-xs md:text-sm leading-relaxed">
+                <p><strong>A. Biografi:</strong> Sepupu & menantu Nabi SAW. Pemuda pertama yang masuk Islam.</p>
+                
+                <p><strong>B. Kebijakan Utama:</strong></p>
+                <ul class="list-disc pl-5 space-y-1.5">
+                  <li><strong>Ibu Kota Kufah:</strong> Memindahkan pusat pemerintahan ke Kufah (Irak).</li>
+                  <li><strong>Pengembangan Ilmu Nahwu:</strong> Menginstruksikan Abu al-Aswad ad-Du'ali menyusun kaidah bahasa Arab.</li>
+                  <li><strong>Penataan Aset Negara:</strong> Menata ulang tanah publik dan reformasi pejabat.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="glass-card p-3 rounded-xl space-y-2 cursor-pointer" onclick="openLightbox('./assets/images/banner.jpg', 'Pusat Ilmu Kufah')">
+              <img src="./assets/images/banner.jpg" onerror="this.src='file:///C:/Users/HP/.gemini/antigravity/scratch/ski-khulafaur-rasyidin/assets/images/banner.jpg'" alt="Kufah" class="rounded-lg object-cover w-full h-40 border">
+              <span class="text-[10px] font-bold text-teal-800 bg-teal-100 px-2 py-0.5 rounded inline-block">Pusat Ilmu Kufah</span>
+              <p class="text-xs text-slate-600">Kufah menjadi pusat pertumbuhan tata bahasa Arab (Ilmu Nahwu).</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- TAB 2: LINIMASA SEJARAH -->
+      <section id="tab-timeline" class="hidden space-y-4">
+        <h2 class="text-lg font-bold text-slate-900">⏳ Linimasa Peristiwa Khulafaur Rasyidin</h2>
+        <div class="relative border-l-2 border-emerald-500 ml-3 pl-5 space-y-6 my-2 text-xs md:text-sm">
+          
+          <div class="relative">
+            <div class="absolute -left-[29px] top-1 w-3.5 h-3.5 rounded-full bg-emerald-600 border-2 border-white"></div>
+            <span class="bg-emerald-100 text-emerald-900 text-[11px] font-bold px-2 py-0.5 rounded">11 H (632 M)</span>
+            <h3 class="font-bold text-slate-900 mt-1">Pembaitan Abu Bakar as-Siddiq</h3>
+            <p class="text-slate-600 mt-0.5">Musyawarah Saqifah Bani Sa'idah menetapkan Abu Bakar sebagai Khalifah pertama.</p>
+          </div>
+
+          <div class="relative">
+            <div class="absolute -left-[29px] top-1 w-3.5 h-3.5 rounded-full bg-emerald-600 border-2 border-white"></div>
+            <span class="bg-emerald-100 text-emerald-900 text-[11px] font-bold px-2 py-0.5 rounded">12-13 H (633 M)</span>
+            <h3 class="font-bold text-slate-900 mt-1">Perang Yamamah & Kodifikasi Pertama Al-Qur'an</h3>
+            <p class="text-slate-600 mt-0.5">Gugurnya 70 huffaz mendasari pengumpulan lembaran Al-Qur'an oleh Zaid bin Tsabit.</p>
+          </div>
+
+          <div class="relative">
+            <div class="absolute -left-[29px] top-1 w-3.5 h-3.5 rounded-full bg-emerald-600 border-2 border-white"></div>
+            <span class="bg-emerald-100 text-emerald-900 text-[11px] font-bold px-2 py-0.5 rounded">13-23 H (634-644 M)</span>
+            <h3 class="font-bold text-slate-900 mt-1">Kekhalifahan Umar & Kalender Hijriah</h3>
+            <p class="text-slate-600 mt-0.5">Penetapan kalender resmi Hijriah, pembentukan Baitul Mal, dan Perang Qadisiyyah/Yarmuk.</p>
+          </div>
+
+          <div class="relative">
+            <div class="absolute -left-[29px] top-1 w-3.5 h-3.5 rounded-full bg-emerald-600 border-2 border-white"></div>
+            <span class="bg-emerald-100 text-emerald-900 text-[11px] font-bold px-2 py-0.5 rounded">25-30 H (646-650 M)</span>
+            <h3 class="font-bold text-slate-900 mt-1">Mushaf Utsmani & Armada Laut Pertama</h3>
+            <p class="text-slate-600 mt-0.5">Khalifah Utsman menyatukan Mushaf standar Quraisy dan membentuk pertahanan laut.</p>
+          </div>
+
+          <div class="relative">
+            <div class="absolute -left-[29px] top-1 w-3.5 h-3.5 rounded-full bg-emerald-600 border-4 border-white"></div>
+            <span class="bg-emerald-100 text-emerald-900 text-[11px] font-bold px-2 py-0.5 rounded">35-40 H (656-661 M)</span>
+            <h3 class="font-bold text-slate-900 mt-1">Kepemimpinan Ali bin Abi Thalib & Ilmu Nahwu</h3>
+            <p class="text-slate-600 mt-0.5">Pemindahan ibu kota ke Kufah dan peletakan dasar tata bahasa Arab oleh Abu al-Aswad ad-Du'ali.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- TAB 3: GALERI VISUAL -->
+      <section id="tab-galeri" class="hidden space-y-4">
+        <div class="flex justify-between items-center">
+          <h2 class="text-lg font-bold text-slate-900">🖼️ Galeri Visual Peradaban Islam</h2>
+          <span class="text-xs text-slate-500">Klik gambar untuk memperbesar</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <!-- Card 1 -->
+          <div class="glass-card rounded-xl overflow-hidden shadow-sm hover:shadow-md transition cursor-pointer" onclick="openLightbox('./assets/images/banner.jpg', 'Poster Utama Khulafaur Rasyidin')">
+            <div class="h-48 overflow-hidden bg-slate-100">
+              <img src="./assets/images/banner.jpg" onerror="this.src='file:///C:/Users/HP/.gemini/antigravity/scratch/ski-khulafaur-rasyidin/assets/images/banner.jpg'" alt="Poster Khulafaur Rasyidin" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+            </div>
+            <div class="p-3.5">
+              <h3 class="font-bold text-emerald-800 text-sm">Poster Khulafaur Rasyidin</h3>
+              <p class="text-xs text-slate-600 mt-1">Ilustrasi kepemimpinan empat sahabat utama Rasulullah SAW (11 H - 40 H).</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="glass-card rounded-xl overflow-hidden shadow-sm hover:shadow-md transition cursor-pointer" onclick="openLightbox('./assets/images/quran.jpg', 'Kodifikasi Al-Qur\'an & Mushaf Utsmani')">
+            <div class="h-48 overflow-hidden bg-slate-100">
+              <img src="./assets/images/quran.jpg" onerror="this.src='file:///C:/Users/HP/.gemini/antigravity/scratch/ski-khulafaur-rasyidin/assets/images/quran.jpg'" alt="Mushaf Quran" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+            </div>
+            <div class="p-3.5">
+              <h3 class="font-bold text-amber-800 text-sm">Mushaf Al-Qur'an</h3>
+              <p class="text-xs text-slate-600 mt-1">Pemeliharaan & standardisasi penulisan Al-Qur'an pada masa Abu Bakar & Utsman bin Affan.</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="glass-card rounded-xl overflow-hidden shadow-sm hover:shadow-md transition cursor-pointer" onclick="openLightbox('./assets/images/baitulmal.jpg', 'Baitul Mal & Administrasi Peradaban')">
+            <div class="h-48 overflow-hidden bg-slate-100">
+              <img src="./assets/images/baitulmal.jpg" onerror="this.src='file:///C:/Users/HP/.gemini/antigravity/scratch/ski-khulafaur-rasyidin/assets/images/baitulmal.jpg'" alt="Baitul Mal" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+            </div>
+            <div class="p-3.5">
+              <h3 class="font-bold text-teal-800 text-sm">Baitul Mal & Diwan Administrasi</h3>
+              <p class="text-xs text-slate-600 mt-1">Lembaga perbendaharaan kas negara & sistem Diwan gaji yang dikembangkan Umar bin Khattab.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 4: KUIS INTERAKTIF ALA KAHOOT (KHUSUS TAMPILAN KUIS SERU) -->
+      <section id="tab-kuis" class="hidden space-y-4 relative">
+        
+        <!-- Floating Points Pop-up Container -->
+        <div id="floating-score-container" class="absolute top-2 right-4 z-40 pointer-events-none"></div>
+
+        <!-- KAHOOT STYLE TOP HEADER FOR QUIZ TAB -->
+        <div class="bg-gradient-to-r from-purple-900 via-indigo-900 to-violet-900 p-4 rounded-2xl text-white shadow-xl flex flex-wrap justify-between items-center gap-3">
+          <div class="flex items-center gap-2">
+            <span id="quiz-model-badge" class="bg-amber-400 text-purple-950 text-xs font-black px-3 py-1 rounded-full uppercase shadow">Model 1: Pilihan Ganda</span>
+            <span id="quiz-question-number" class="text-xs md:text-sm font-extrabold text-purple-200">Soal 1 / 20</span>
+          </div>
+
+          <!-- STREAK & LIVE SCORE DASHBOARD -->
+          <div class="flex items-center gap-3 text-xs font-black">
+            <div class="bg-purple-800/80 px-3 py-1.5 rounded-xl border border-purple-500/40 flex items-center gap-1">
+              <span class="text-amber-300">🔥 Streak:</span>
+              <span id="streak-counter" class="text-amber-400 font-black text-sm">0x</span>
+            </div>
+
+            <div class="bg-emerald-700 px-3.5 py-1.5 rounded-xl border border-emerald-400/40 flex items-center gap-1 shadow">
+              <span class="text-emerald-100">⚡ Poin:</span>
+              <span id="kahoot-total-score" class="text-white font-black text-sm">0</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- KAHOOT TIMER BAR -->
+        <div class="bg-slate-100 p-3 rounded-2xl border border-slate-200 space-y-1.5">
+          <div class="flex justify-between items-center text-xs font-black text-slate-700">
+            <span class="flex items-center gap-1">⏱️ Waktu Menjawab:</span>
+            <span id="timer-text" class="text-purple-900 font-extrabold text-xs bg-purple-100 px-2.5 py-0.5 rounded-full">20 Detik</span>
+          </div>
+          <div class="w-full bg-slate-300 h-2.5 rounded-full overflow-hidden">
+            <div id="timer-progress-bar" class="bg-gradient-to-r from-emerald-500 via-amber-500 to-rose-500 h-full w-full transition-all duration-1000 ease-linear"></div>
+          </div>
+        </div>
+
+        <!-- QUESTION CARD CONTAINER -->
+        <div class="bg-white p-5 md:p-6 rounded-2xl border border-slate-200 space-y-5 shadow-lg relative overflow-hidden">
+          
+          <div class="space-y-1">
+            <p id="quiz-question-text" class="text-base md:text-lg font-black text-slate-900 leading-relaxed tracking-tight">
+              Loading question...
+            </p>
+          </div>
+
+          <!-- KAHOOT COLOR BLOCKS (🔺🔴, 🔷🔵, 🟡💛, 🟩🟢) -->
+          <div id="quiz-options-area" class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <!-- Options dynamically rendered here -->
+          </div>
+
+          <!-- EXPLANATION BOX -->
+          <div id="quiz-explanation-box" class="hidden p-3.5 rounded-xl border bg-amber-50 border-amber-200 space-y-1">
+            <div class="flex items-center gap-1.5 text-amber-900 font-bold text-xs">
+              <span>💡 Pembahasan Sejarah:</span>
+            </div>
+            <p id="quiz-explanation-text" class="text-xs md:text-sm text-slate-700 leading-relaxed font-medium"></p>
+          </div>
+
+          <!-- ACTION BUTTONS -->
+          <div class="flex justify-between items-center pt-3 border-t border-slate-200">
+            <button id="btn-prev-question" onclick="prevQuestion()" class="px-3.5 py-2 bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold text-xs md:text-sm rounded-xl transition disabled:opacity-50" disabled>
+              ← Soal Sebelumnya
+            </button>
+            <button id="btn-next-question" onclick="nextQuestion()" class="px-4 py-2 bg-purple-700 hover:bg-purple-800 text-white font-bold text-xs md:text-sm rounded-xl shadow transition">
+              Lanjut Soal →
+            </button>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- TAB 5: HASIL & EVALUASI -->
+      <section id="tab-evaluasi" class="hidden space-y-5">
+        <div class="text-center space-y-3 max-w-lg mx-auto glass-card p-6 rounded-2xl">
+          <div class="inline-block p-3 bg-emerald-100 text-emerald-800 rounded-full text-3xl">🏆</div>
+          <h2 class="text-xl font-black text-slate-900">Hasil Evaluasi Kuis SKI</h2>
+          <p class="text-xs text-slate-600">Perkembangan Islam Masa Khulafaur Rasyidin</p>
+          
+          <div class="py-2">
+            <div id="final-score-display" class="text-5xl font-black text-emerald-700">0</div>
+            <div id="final-grade-badge" class="mt-2 inline-block bg-emerald-100 text-emerald-800 font-bold text-xs px-3 py-1 rounded-full">
+              Mumtaz (Sangat Baik)
+            </div>
+          </div>
+
+          <div class="grid grid-cols-3 gap-2 text-left bg-slate-50 p-3 rounded-xl border border-slate-200 text-xs font-bold">
+            <div>
+              <p class="text-slate-500 font-medium">Model 1 (PG)</p>
+              <p id="score-m1" class="font-bold text-slate-800 text-sm">0 / 8</p>
+            </div>
+            <div>
+              <p class="text-slate-500 font-medium">Model 2 (B/S)</p>
+              <p id="score-m2" class="font-bold text-slate-800 text-sm">0 / 6</p>
+            </div>
+            <div>
+              <p class="text-slate-500 font-medium">Model 3 (Jodoh)</p>
+              <p id="score-m3" class="font-bold text-slate-800 text-sm">0 / 6</p>
+            </div>
+          </div>
+
+          <div class="pt-3 flex justify-center gap-3">
+            <button onclick="restartQuiz()" class="px-5 py-2.5 bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs rounded-xl shadow transition">
+              🔄 Ulangi Kuis
+            </button>
+            <button onclick="switchTab('materi')" class="px-5 py-2.5 bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold text-xs rounded-xl transition">
+              📖 Pelajari Materi
+            </button>
+          </div>
+        </div>
+
+        <!-- Detail Review Answers -->
+        <div class="space-y-3">
+          <h3 class="text-base font-bold text-slate-900">Rekap Pembahasan 20 Soal:</h3>
+          <div id="review-questions-list" class="space-y-2.5">
+            <!-- Review items dynamically injected here -->
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <!-- FIXED BOTTOM TOOLBAR -->
+  <nav class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 shadow-2xl px-2 py-1.5">
+    <div class="max-w-md md:max-w-xl mx-auto flex justify-around items-center text-[11px] font-semibold">
+      
+      <button id="nav-materi" onclick="switchTab('materi')" class="flex flex-col items-center gap-0.5 px-3 py-1 rounded-xl transition active-nav-bottom">
+        <span class="text-base">📖</span>
+        <span>Materi</span>
+      </button>
+
+      <button id="nav-timeline" onclick="switchTab('timeline')" class="flex flex-col items-center gap-0.5 px-3 py-1 rounded-xl transition text-slate-500 hover:text-emerald-700">
+        <span class="text-base">⏳</span>
+        <span>Linimasa</span>
+      </button>
+
+      <button id="nav-galeri" onclick="switchTab('galeri')" class="flex flex-col items-center gap-0.5 px-3 py-1 rounded-xl transition text-slate-500 hover:text-emerald-700">
+        <span class="text-base">🖼️</span>
+        <span>Galeri</span>
+      </button>
+
+      <button id="nav-kuis" onclick="switchTab('kuis')" class="flex flex-col items-center gap-0.5 px-3 py-1 rounded-xl transition text-slate-500 hover:text-emerald-700 relative">
+        <span class="text-base">📝</span>
+        <span>Kuis (20)</span>
+      </button>
+
+      <button id="nav-evaluasi" onclick="switchTab('evaluasi')" class="flex flex-col items-center gap-0.5 px-3 py-1 rounded-xl transition text-slate-500 hover:text-emerald-700">
+        <span class="text-base">📊</span>
+        <span>Hasil</span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- IMAGE LIGHTBOX MODAL -->
+  <div id="lightbox-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4" onclick="closeLightbox()">
+    <div class="relative max-w-4xl w-full bg-white rounded-2xl overflow-hidden shadow-2xl border border-slate-700" onclick="event.stopPropagation()">
+      <div class="flex justify-between items-center bg-slate-900 text-white px-4 py-3 border-b border-slate-800">
+        <h3 id="lightbox-title" class="font-bold text-sm">Visualisasi Sejarah</h3>
+        <button onclick="closeLightbox()" class="text-slate-400 hover:text-white text-xl font-bold px-2">✕</button>
+      </div>
+      <div class="p-2 bg-slate-950 flex justify-center">
+        <img id="lightbox-img" src="" class="max-h-[75vh] object-contain rounded-lg">
+      </div>
+    </div>
+  </div>
+
+  <!-- APPLICATION LOGIC SCRIPT -->
+  <script>
+    const questions = [
+      // MODEL 1: PILIHAN GANDA (1 - 8)
+      {
+        id: 1,
+        model: 1,
+        modelName: "Model 1: Pilihan Ganda",
+        question: "Mengapa Khalifah Abu Bakar as-Siddiq mengambil tindakan tegas memerangi kaum murtad dan pembangkang zakat dalam Perang Riddah?",
+        options: [
+          "A. Karena ingin perluasan wilayah ke Kekaisaran Persia",
+          "B. Untuk menjaga keutuhan akidah Islam dan stabilitas negara pasca wafatnya Rasulullah SAW",
+          "C. Karena terdesak oleh ancaman serangan pasukan Romawi",
+          "D. Untuk mengumpulkan dana pembangunan sarana kota Madinah"
+        ],
+        answer: 1,
+        explanation: "Pasca wafatnya Rasulullah SAW, timbul ancaman disintegrasi berupa pembangkang zakat, kaum murtad, dan nabi palsu. Tindakan tegas Abu Bakar berhasil menyelamatkan keutuhan Umat Islam."
+      },
+      {
+        id: 2,
+        model: 1,
+        modelName: "Model 1: Pilihan Ganda",
+        question: "Siapakah sahabat yang pertama kali mengusulkan pengumpulan dan kodifikasi Al-Qur'an kepada Khalifah Abu Bakar?",
+        options: [
+          "A. Zaid bin Tsabit",
+          "B. Utsman bin Affan",
+          "C. Umar bin Khattab",
+          "D. Ali bin Abi Thalib"
+        ],
+        answer: 2,
+        explanation: "Umar bin Khattab prihatin atas gugurnya 70 huffaz (penghafal Al-Qur'an) dalam Perang Yamamah, lalu mengusulkan pengumpulan Al-Qur'an demi melestarikan ayat-ayat Allah."
+      },
+      {
+        id: 3,
+        model: 1,
+        modelName: "Model 1: Pilihan Ganda",
+        question: "Penetapan kalender resmi Islam (Penanggalan Hijriah) pertama kali diresmikan pada masa kekhalifahan...",
+        options: [
+          "A. Rasulullah SAW",
+          "B. Abu Bakar as-Siddiq",
+          "C. Umar bin Khattab",
+          "D. Utsman bin Affan"
+        ],
+        answer: 2,
+        explanation: "Umar bin Khattab menetapkan kalender Hijriah dengan patokan awal pada peristiwa Hijrah Nabi Muhammad SAW dari Makkah ke Madinah."
+      },
+      {
+        id: 4,
+        model: 1,
+        modelName: "Model 1: Pilihan Ganda",
+        question: "Lembaga kas keuangan negara yang dibentuk untuk mengelola pendapatan zakat dan pajak pada masa Umar bin Khattab bernama...",
+        options: [
+          "A. Diwan Al-Jund",
+          "B. Baitul Mal",
+          "C. Majlis Asy-Syura",
+          "D. Qadhi Al-Qudhat"
+        ],
+        answer: 1,
+        explanation: "Baitul Mal dirapikan administrasinya oleh Umar bin Khattab untuk menyimpan kas negara dan menyalurkan gaji tentara serta santunan kesejahteraan rakyat."
+      },
+      {
+        id: 5,
+        model: 1,
+        modelName: "Model 1: Pilihan Ganda",
+        question: "Alasan utama Khalifah Utsman bin Affan melakukan penyusunan Mushaf Utsmani (Standardisasi Al-Qur'an) adalah...",
+        options: [
+          "A. Karena mushaf asli yang dipegang Hafsah telah rusak",
+          "B. Terjadinya perbedaan cara baca (qira'at) Al-Qur'an di berbagai wilayah yang berpotensi memicu perpecahan",
+          "C. Keinginan untuk menambah isi kandungan Al-Qur'an",
+          "D. Adanya perintah tertulis dari raja-raja tetangga"
+        ],
+        answer: 1,
+        explanation: "Penyusunan Mushaf Utsmani bertujuan menyatukan seluruh umat Islam pada satu standar dialek resmi Quraisy untuk menghindari perselisihan bacaan."
+      },
+      {
+        id: 6,
+        model: 1,
+        modelName: "Model 1: Pilihan Ganda",
+        question: "Pembentukan armada laut Islam (Al-Ustul Al-Bahri) pertama kali berdiri pada masa kepemimpinan Khalifah...",
+        options: [
+          "A. Abu Bakar as-Siddiq",
+          "B. Umar bin Khattab",
+          "C. Utsman bin Affan",
+          "D. Ali bin Abi Thalib"
+        ],
+        answer: 2,
+        explanation: "Mu'awiyah bin Abi Sufyan atas persetujuan Khalifah Utsman bin Affan membentuk armada laut pertama untuk menjaga pesisir Islam dari serangan Romawi."
+      },
+      {
+        id: 7,
+        model: 1,
+        modelName: "Model 1: Pilihan Ganda",
+        question: "Langkah awal yang dilakukan Khalifah Ali bin Abi Thalib saat memegang pemerintahan adalah...",
+        options: [
+          "A. Memindahkan ibu kota ke Damaskus",
+          "B. Menarik kembali tanah negara & mengganti pejabat yang kurang efektif",
+          "C. Membubarkan pasukan tentara Islam",
+          "D. Menghentikan penyebaran Al-Qur'an"
+        ],
+        answer: 1,
+        explanation: "Ali bin Abi Thalib memfokuskan perbaikan birokrasi, penataan tanah milik kas negara, serta reformasi pejabat demi keadilan pemerintahan."
+      },
+      {
+        id: 8,
+        model: 1,
+        modelName: "Model 1: Pilihan Ganda",
+        question: "Ilmu tata bahasa Arab (Ilmu Nahwu) pertama kali dirumuskan atas instruksi Ali bin Abi Thalib kepada sahabat...",
+        options: [
+          "A. Abdullah bin Abbas",
+          "B. Abu al-Aswad ad-Du'ali",
+          "C. Hassan bin Tsabit",
+          "D. Mu'adz bin Jabal"
+        ],
+        answer: 1,
+        explanation: "Ali menginstruksikan Abu al-Aswad ad-Du'ali merumuskan kaidah tata bahasa Arab agar umat non-Arab dapat membaca dan memahami Al-Qur'an dengan benar."
+      },
+
+      // MODEL 2: BENAR / SALAH (9 - 14)
+      {
+        id: 9,
+        model: 2,
+        modelName: "Model 2: Benar / Salah",
+        question: "Pernyataan: Gelar 'As-Siddiq' diberikan kepada Abu Bakar karena beliau selalu membenarkan ucapan dan kenabian Rasulullah SAW, termasuk peristiwa Isra Mi'raj.",
+        options: ["BENAR", "SALAH"],
+        answer: 0,
+        explanation: "Abu Bakar langsung membenarkan peristiwa luar biasa Isra Mi'raj tanpa keraguan sedikitpun."
+      },
+      {
+        id: 10,
+        model: 2,
+        modelName: "Model 2: Benar / Salah",
+        question: "Pernyataan: Perang Yamamah menumpas nabi palsu Musailamah Al-Kazzab terjadi pada masa kepemimpinan Khalifah Umar bin Khattab.",
+        options: ["BENAR", "SALAH"],
+        answer: 1,
+        explanation: "Perang Yamamah terjadi pada masa Khalifah pertama, Abu Bakar as-Siddiq."
+      },
+      {
+        id: 11,
+        model: 2,
+        modelName: "Model 2: Benar / Salah",
+        question: "Pernyataan: Khalifah Utsman bin Affan mendapat julukan 'Dzun Nurain' karena menikahi dua putri Rasulullah SAW (Ruqayyah dan Ummu Kultsum).",
+        options: ["BENAR", "SALAH"],
+        answer: 0,
+        explanation: "Dzun Nurain artinya Pemilik Dua Cahaya, menggambarkan keistimewaan Utsman yang menikahi dua putri Nabi secara berurutan."
+      },
+      {
+        id: 12,
+        model: 2,
+        modelName: "Model 2: Benar / Salah",
+        question: "Pernyataan: Ibu kota pusat pemerintahan Islam dipindahkan dari Madinah ke Kufah (Irak) pada masa Ali bin Abi Thalib.",
+        options: ["BENAR", "SALAH"],
+        answer: 0,
+        explanation: "Ali memindahkan ibu kota ke Kufah demi efisiensi pertahanan dan geografis wilayah kekhalifahan."
+      },
+      {
+        id: 13,
+        model: 2,
+        modelName: "Model 2: Benar / Salah",
+        question: "Pernyataan: Kemenangan militer Islam di Lembah Yarmuk melawan kekaisaran Romawi terjadi pada masa kekhalifahan Abu Bakar.",
+        options: ["BENAR", "SALAH"],
+        answer: 1,
+        explanation: "Pertempuran Yarmuk terjadi dan mencapai puncaknya pada masa Khalifah Umar bin Khattab."
+      },
+      {
+        id: 14,
+        model: 2,
+        modelName: "Model 2: Benar / Salah",
+        question: "Pernyataan: Sahabat Zaid bin Tsabit menjadi ketua panitia kodifikasi Al-Qur'an baik di masa Abu Bakar maupun masa Utsman bin Affan.",
+        options: ["BENAR", "SALAH"],
+        answer: 0,
+        explanation: "Zaid bin Tsabit dipercaya di kedua era karena kecerdasannya dan kedudukannya sebagai penulis wahyu utama."
+      },
+
+      // MODEL 3: MENJODOHKAN / PASANGKAN KEBIJAKAN (15 - 20)
+      {
+        id: 15,
+        model: 3,
+        modelName: "Model 3: Menjodohkan",
+        question: "Pasangkan Peristiwa berikut dengan Tokoh Khalifah yang tepat:\n'Penumpasan kaum murtad & nabi palsu Musailamah Al-Kazzab'",
+        options: ["Abu Bakar as-Siddiq", "Umar bin Khattab", "Utsman bin Affan", "Ali bin Abi Thalib"],
+        answer: 0,
+        explanation: "Perang Riddah dan Perang Yamamah adalah pencapaian terbesar masa Abu Bakar."
+      },
+      {
+        id: 16,
+        model: 3,
+        modelName: "Model 3: Menjodohkan",
+        question: "Pasangkan Peristiwa berikut dengan Tokoh Khalifah yang tepat:\n'Penetapan resmi Kalender Hijriah & Pembentukan Baitul Mal'",
+        options: ["Abu Bakar as-Siddiq", "Umar bin Khattab", "Utsman bin Affan", "Ali bin Abi Thalib"],
+        answer: 1,
+        explanation: "Umar bin Khattab adalah pencetus kalender Hijriah dan pembentuk lembaga keuangan Baitul Mal."
+      },
+      {
+        id: 17,
+        model: 3,
+        modelName: "Model 3: Menjodohkan",
+        question: "Pasangkan Peristiwa berikut dengan Tokoh Khalifah yang tepat:\n'Penyusunan Mushaf Utsmani & penggandaan ke berbagai wilayah'",
+        options: ["Abu Bakar as-Siddiq", "Umar bin Khattab", "Utsman bin Affan", "Ali bin Abi Thalib"],
+        answer: 2,
+        explanation: "Utsman bin Affan menyatukan mushaf Al-Qur'an standar dialek Quraisy."
+      },
+      {
+        id: 18,
+        model: 3,
+        modelName: "Model 3: Menjodohkan",
+        question: "Pasangkan Peristiwa berikut dengan Tokoh Khalifah yang tepat:\n'Pengembangan Ilmu Nahwu & pemindahan ibu kota ke Kufah'",
+        options: ["Abu Bakar as-Siddiq", "Umar bin Khattab", "Utsman bin Affan", "Ali bin Abi Thalib"],
+        answer: 3,
+        explanation: "Ali bin Abi Thalib mempelopori kaidah bahasa Arab (Ilmu Nahwu) dan memindahkan ibu kota ke Kufah."
+      },
+      {
+        id: 19,
+        model: 3,
+        modelName: "Model 3: Menjodohkan",
+        question: "Pasangkan Peristiwa berikut dengan Tokoh Khalifah yang tepat:\n'Pembentukan Armada Laut Pertahanan Islam Pertama (Dzatus Sawari)'",
+        options: ["Abu Bakar as-Siddiq", "Umar bin Khattab", "Utsman bin Affan", "Ali bin Abi Thalib"],
+        answer: 2,
+        explanation: "Armada laut perairan Islam dibentuk pada masa Utsman bin Affan."
+      },
+      {
+        id: 20,
+        model: 3,
+        modelName: "Model 3: Menjodohkan",
+        question: "Pasangkan Peristiwa berikut dengan Tokoh Khalifah yang tepat:\n'Kemenangan Perang Qadisiyyah melawan Kekaisaran Persia'",
+        options: ["Abu Bakar as-Siddiq", "Umar bin Khattab", "Utsman bin Affan", "Ali bin Abi Thalib"],
+        answer: 1,
+        explanation: "Perang Qadisiyyah runtuhnya Persia terjadi pada kekhalifahan Umar bin Khattab."
+      }
+    ];
+
+    let currentQuestionIndex = 0;
+    let userAnswers = new Array(questions.length).fill(null);
+    let streakCount = 0;
+    let totalKahootPoints = 0;
+    let timerInterval = null;
+    let timeLeft = 20;
+
+    function launchConfetti() {
+      const colors = ['#f43f5e', '#3b82f6', '#eab308', '#22c55e', '#a855f7', '#ec4899'];
+      for (let i = 0; i < 40; i++) {
+        const confetti = document.createElement('div');
+        confetti.className = 'fixed z-50 pointer-events-none rounded-sm';
+        confetti.style.left = Math.random() * 100 + 'vw';
+        confetti.style.top = '-10px';
+        confetti.style.width = (Math.random() * 8 + 6) + 'px';
+        confetti.style.height = (Math.random() * 12 + 6) + 'px';
+        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
+        confetti.style.transition = `all ${Math.random() * 2 + 1.5}s cubic-bezier(0.25, 0.46, 0.45, 0.94)`;
+        document.body.appendChild(confetti);
+        
+        setTimeout(() => {
+          confetti.style.top = (Math.random() * 20 + 80) + 'vh';
+          confetti.style.left = (parseFloat(confetti.style.left) + (Math.random() * 40 - 20)) + 'vw';
+          confetti.style.opacity = '0';
+          confetti.style.transform = `rotate(${Math.random() * 720}deg)`;
+        }, 20);
+
+        setTimeout(() => confetti.remove(), 3500);
+      }
+    }
+
+    function playChime() {
+      try {
+        const ctx = new (window.AudioContext || window.webkitAudioContext)();
+        const notes = [523.25, 659.25, 783.99, 1046.50];
+        notes.forEach((freq, idx) => {
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.type = 'triangle';
+          osc.frequency.value = freq;
+          gain.gain.setValueAtTime(0.12, ctx.currentTime + idx * 0.08);
+          gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + idx * 0.08 + 0.3);
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.start(ctx.currentTime + idx * 0.08);
+          osc.stop(ctx.currentTime + idx * 0.08 + 0.3);
+        });
+      } catch(e) {}
+    }
+
+    function playWrongSound() {
+      try {
+        const ctx = new (window.AudioContext || window.webkitAudioContext)();
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = 'sawtooth';
+        osc.frequency.setValueAtTime(260, ctx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(120, ctx.currentTime + 0.3);
+        gain.gain.setValueAtTime(0.2, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.35);
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start();
+        osc.stop(ctx.currentTime + 0.35);
+      } catch(e) {}
+    }
+
+    function openLightbox(src, title) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox-title').innerText = title;
+      document.getElementById('lightbox-modal').classList.remove('hidden');
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox-modal').classList.add('hidden');
+    }
+
+    function switchTab(tabId) {
+      const tabs = ['materi', 'timeline', 'galeri', 'kuis', 'evaluasi'];
+      tabs.forEach(t => {
+        document.getElementById(`tab-${t}`).classList.add('hidden');
+        const navBtn = document.getElementById(`nav-${t}`);
+        if (navBtn) {
+          navBtn.classList.remove('active-nav-bottom');
+          navBtn.classList.add('text-slate-500');
+        }
+      });
+
+      document.getElementById(`tab-${tabId}`).classList.remove('hidden');
+      const activeNav = document.getElementById(`nav-${tabId}`);
+      if (activeNav) {
+        activeNav.classList.add('active-nav-bottom');
+        activeNav.classList.remove('text-slate-500');
+      }
+
+      if (tabId === 'kuis') {
+        renderQuestion();
+      } else {
+        clearInterval(timerInterval);
+        if (tabId === 'evaluasi') calculateAndRenderResults();
+      }
+    }
+
+    function showKhalifah(index) {
+      for(let i = 1; i <= 4; i++) {
+        document.getElementById(`khalifah-${i}`).classList.add('hidden');
+        const btn = document.getElementById(`btn-khalifah-${i}`);
+        btn.classList.remove('bg-emerald-700', 'text-white');
+        btn.classList.add('bg-slate-200', 'text-slate-700');
+      }
+      document.getElementById(`khalifah-${index}`).classList.remove('hidden');
+      const activeBtn = document.getElementById(`btn-khalifah-${index}`);
+      activeBtn.classList.remove('bg-slate-200', 'text-slate-700');
+      activeBtn.classList.add('bg-emerald-700', 'text-white');
+    }
+
+    function startTimer() {
+      clearInterval(timerInterval);
+      timeLeft = 20;
+      updateTimerUI();
+
+      timerInterval = setInterval(() => {
+        timeLeft--;
+        updateTimerUI();
+        if (timeLeft <= 0) {
+          clearInterval(timerInterval);
+          if (userAnswers[currentQuestionIndex] === null) {
+            playWrongSound();
+            userAnswers[currentQuestionIndex] = -1;
+            streakCount = 0;
+            document.getElementById('streak-counter').innerText = `0x`;
+            renderQuestion();
+          }
+        }
+      }, 1000);
+    }
+
+    function updateTimerUI() {
+      document.getElementById('timer-text').innerText = `${timeLeft} Detik`;
+      const percentage = (timeLeft / 20) * 100;
+      const bar = document.getElementById('timer-progress-bar');
+      bar.style.width = `${percentage}%`;
+    }
+
+    const kahootBlockStyles = [
+      { bg: 'bg-rose-600 hover:bg-rose-500 border-rose-700 text-white', icon: '🔺' },
+      { bg: 'bg-blue-600 hover:bg-blue-500 border-blue-700 text-white', icon: '🔷' },
+      { bg: 'bg-amber-500 hover:bg-amber-400 border-amber-600 text-purple-950', icon: '🟡' },
+      { bg: 'bg-emerald-600 hover:bg-emerald-500 border-emerald-700 text-white', icon: '🟩' }
+    ];
+
+    function renderQuestion() {
+      const q = questions[currentQuestionIndex];
+      document.getElementById('quiz-model-badge').innerText = q.modelName;
+      document.getElementById('quiz-question-number').innerText = `Soal ${currentQuestionIndex + 1} / ${questions.length}`;
+      document.getElementById('quiz-question-text').innerText = q.question;
+      document.getElementById('kahoot-total-score').innerText = totalKahootPoints;
+
+      const optionsArea = document.getElementById('quiz-options-area');
+      optionsArea.innerHTML = '';
+
+      const selectedAnswer = userAnswers[currentQuestionIndex];
+
+      if (selectedAnswer === null) {
+        startTimer();
+      } else {
+        clearInterval(timerInterval);
+      }
+
+      q.options.forEach((opt, idx) => {
+        const btn = document.createElement('button');
+        const style = kahootBlockStyles[idx % 4];
+
+        btn.className = `w-full text-left p-3.5 md:p-4 rounded-xl border-2 font-black text-xs md:text-sm transition-all duration-150 transform flex items-center justify-between shadow-md active:scale-95 `;
+
+        if (selectedAnswer === null) {
+          btn.className += `${style.bg} hover:scale-[1.02]`;
+          btn.onclick = () => selectOption(idx);
+        } else {
+          if (idx === q.answer) {
+            btn.className += `bg-emerald-600 border-emerald-400 text-white ring-4 ring-emerald-300 scale-102`;
+          } else if (idx === selectedAnswer) {
+            btn.className += `bg-rose-700 border-rose-900 text-white opacity-90`;
+          } else {
+            btn.className += `bg-slate-200 border-slate-300 text-slate-400 opacity-40`;
+          }
+        }
+
+        btn.innerHTML = `
+          <div class="flex items-center gap-2.5">
+            <span class="text-base">${style.icon}</span>
+            <span>${opt}</span>
+          </div>
+          <span>${selectedAnswer !== null && idx === q.answer ? '✅' : (selectedAnswer === idx ? '❌' : '')}</span>
+        `;
+        optionsArea.appendChild(btn);
+      });
+
+      const expBox = document.getElementById('quiz-explanation-box');
+      if (selectedAnswer !== null) {
+        expBox.classList.remove('hidden');
+        document.getElementById('quiz-explanation-text').innerText = q.explanation;
+      } else {
+        expBox.classList.add('hidden');
+      }
+
+      document.getElementById('btn-prev-question').disabled = currentQuestionIndex === 0;
+      
+      const nextBtn = document.getElementById('btn-next-question');
+      if (currentQuestionIndex === questions.length - 1) {
+        nextBtn.innerText = 'Lihat Hasil Evaluasi 🎉';
+      } else {
+        nextBtn.innerText = 'Lanjut Soal →';
+      }
+    }
+
+    function selectOption(index) {
+      if (userAnswers[currentQuestionIndex] !== null) return;
+      clearInterval(timerInterval);
+
+      userAnswers[currentQuestionIndex] = index;
+      const q = questions[currentQuestionIndex];
+
+      if (index === q.answer) {
+        streakCount++;
+        const speedBonus = Math.round((timeLeft / 20) * 500);
+        const earnedPoints = 500 + speedBonus + (streakCount * 100);
+        totalKahootPoints += earnedPoints;
+
+        playChime();
+        launchConfetti();
+        showFloatingScore(`+${earnedPoints} Pts! 🔥`);
+
+        document.getElementById('streak-counter').innerText = `${streakCount}x 🔥`;
+      } else {
+        streakCount = 0;
+        playWrongSound();
+        document.getElementById('streak-counter').innerText = `0x`;
+      }
+
+      renderQuestion();
+    }
+
+    function showFloatingScore(text) {
+      const container = document.getElementById('floating-score-container');
+      const el = document.createElement('div');
+      el.className = 'text-amber-500 font-black text-xl md:text-2xl drop-shadow-md animate-float-score';
+      el.innerText = text;
+      container.appendChild(el);
+      setTimeout(() => el.remove(), 1200);
+    }
+
+    function nextQuestion() {
+      if (currentQuestionIndex < questions.length - 1) {
+        currentQuestionIndex++;
+        renderQuestion();
+      } else {
+        switchTab('evaluasi');
+      }
+    }
+
+    function prevQuestion() {
+      if (currentQuestionIndex > 0) {
+        currentQuestionIndex--;
+        renderQuestion();
+      }
+    }
+
+    function calculateAndRenderResults() {
+      let totalCorrect = 0;
+      let m1Correct = 0;
+      let m2Correct = 0;
+      let m3Correct = 0;
+
+      questions.forEach((q, idx) => {
+        if (userAnswers[idx] === q.answer) {
+          totalCorrect++;
+          if (q.model === 1) m1Correct++;
+          if (q.model === 2) m2Correct++;
+          if (q.model === 3) m3Correct++;
+        }
+      });
+
+      const finalScore = Math.round((totalCorrect / questions.length) * 100);
+      document.getElementById('final-score-display').innerText = finalScore;
+      document.getElementById('score-m1').innerText = `${m1Correct} / 8`;
+      document.getElementById('score-m2').innerText = `${m2Correct} / 6`;
+      document.getElementById('score-m3').innerText = `${m3Correct} / 6`;
+
+      const gradeBadge = document.getElementById('final-grade-badge');
+      if (finalScore >= 90) {
+        gradeBadge.innerText = '🌟 Mumtaz (Sangat Baik / Sempurna)';
+        gradeBadge.className = 'mt-2 inline-block bg-emerald-100 text-emerald-800 font-bold text-xs px-3 py-1 rounded-full';
+        launchConfetti();
+      } else if (finalScore >= 75) {
+        gradeBadge.innerText = '👍 Jayyid Jiddan (Baik)';
+        gradeBadge.className = 'mt-2 inline-block bg-blue-100 text-blue-800 font-bold text-xs px-3 py-1 rounded-full';
+      } else {
+        gradeBadge.innerText = '📚 Perlu Belajar Lagi';
+        gradeBadge.className = 'mt-2 inline-block bg-amber-100 text-amber-800 font-bold text-xs px-3 py-1 rounded-full';
+      }
+
+      const reviewList = document.getElementById('review-questions-list');
+      reviewList.innerHTML = '';
+
+      questions.forEach((q, idx) => {
+        const isCorrect = userAnswers[idx] === q.answer;
+        const div = document.createElement('div');
+        div.className = `p-3 rounded-xl border text-xs space-y-1 ${isCorrect ? 'bg-emerald-50/60 border-emerald-200' : 'bg-rose-50/60 border-rose-200'}`;
+        
+        const userChoiceText = userAnswers[idx] !== null && userAnswers[idx] !== -1 ? q.options[userAnswers[idx]] : (userAnswers[idx] === -1 ? 'Waktu Habis ⏱️' : 'Belum Dijawab');
+        const correctChoiceText = q.options[q.answer];
+
+        div.innerHTML = `
+          <div class="flex justify-between items-center font-bold">
+            <span class="text-slate-700">Soal ${idx + 1} (${q.modelName}): ${isCorrect ? '✅ Benar' : '❌ Salah'}</span>
+          </div>
+          <p class="font-semibold text-slate-900">${q.question}</p>
+          <p class="text-slate-600">Jawaban Anda: <span class="${isCorrect ? 'text-emerald-700 font-bold' : 'text-rose-700 font-bold'}">${userChoiceText}</span></p>
+          ${!isCorrect ? `<p class="text-slate-600">Jawaban Kunci: <span class="text-emerald-800 font-bold">${correctChoiceText}</span></p>` : ''}
+          <p class="text-slate-500 italic mt-1 font-serif">💡 Pembahasan: ${q.explanation}</p>
+        `;
+
+        reviewList.appendChild(div);
+      });
+    }
+
+    function restartQuiz() {
+      currentQuestionIndex = 0;
+      userAnswers = new Array(questions.length).fill(null);
+      streakCount = 0;
+      totalKahootPoints = 0;
+      document.getElementById('streak-counter').innerText = `0x`;
+      document.getElementById('kahoot-total-score').innerText = `0`;
+      switchTab('kuis');
+    }
+
+    renderQuestion();
+  </script>
+</body>
+</html>
